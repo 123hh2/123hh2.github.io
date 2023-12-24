@@ -1,0 +1,148 @@
+<!-- build time:Sun Dec 24 2023 18:28:04 GMT+0800 (中国标准时间) --><!DOCTYPE html><html lang="zh-CN"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=2"><meta name="theme-color" content="#FFF"><link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png"><link rel="icon" type="image/ico" sizes="32x32" href="/images/favicon.ico"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="alternate" type="application/rss+xml" title="Keep moving forward" href="http://example.com/rss.xml"><link rel="alternate" type="application/atom+xml" title="Keep moving forward" href="http://example.com/atom.xml"><link rel="alternate" type="application/json" title="Keep moving forward" href="http://example.com/feed.json"><link rel="stylesheet" href="//fonts.googleapis.com/css?family=Mulish:300,300italic,400,400italic,700,700italic%7CFredericka%20the%20Great:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20JP:300,300italic,400,400italic,700,700italic%7CNoto%20Serif%20SC:300,300italic,400,400italic,700,700italic%7CInconsolata:300,300italic,400,400italic,700,700italic&display=swap&subset=latin,latin-ext"><link rel="stylesheet" href="/css/app.css?v=0.2.5"><meta name="keywords" content="前缀和,差分"><link rel="canonical" href="http://example.com/2023/12/17/[%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%8050%E9%A2%98]%20%E5%89%8D%E7%BC%80%E5%92%8C%E4%B8%8E%E5%B7%AE%E5%88%86%E9%A2%98%E5%8D%95/"><title>算法基础50题 前缀和与差分题单 | 123hh2 = Keep moving forward</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.12.0/dist/katex.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hexo-math@4.0.0/dist/style.css"><meta name="generator" content="Hexo 7.0.0"></head><body itemscope itemtype="http://schema.org/WebPage"><div id="loading"><div class="cat"><div class="body"></div><div class="head"><div class="face"></div></div><div class="foot"><div class="tummy-end"></div><div class="bottom"></div><div class="legs left"></div><div class="legs right"></div></div><div class="paw"><div class="hands left"></div><div class="hands right"></div></div></div></div><div id="container"><header id="header" itemscope itemtype="http://schema.org/WPHeader"><div class="inner"><div id="brand"><div class="pjax"><h1 itemprop="name headline">算法基础50题 前缀和与差分题单</h1><div class="meta"><span class="item" title="创建时间：2023-12-17 06:03:35"><span class="icon"><i class="ic i-calendar"></i> </span><span class="text">发表于</span> <time itemprop="dateCreated datePublished" datetime="2023-12-17T06:03:35+08:00">2023-12-17</time></span></div></div></div><nav id="nav"><div class="inner"><div class="toggle"><div class="lines" aria-label="切换导航栏"><span class="line"></span> <span class="line"></span> <span class="line"></span></div></div><ul class="menu"><li class="item title"><a href="/" rel="start">123hh2</a></li></ul><ul class="right"><li class="item theme"><i class="ic i-sun"></i></li><li class="item search"><i class="ic i-search"></i></li></ul></div></nav></div><div id="imgs" class="pjax"><ul><li class="item" data-background-image="http://www.dmoe.cc/random.php?82477"></li><li class="item" data-background-image="http://www.dmoe.cc/random.php?184830"></li><li class="item" data-background-image="http://www.dmoe.cc/random.php?133360"></li><li class="item" data-background-image="http://www.dmoe.cc/random.php?33041"></li><li class="item" data-background-image="http://www.dmoe.cc/random.php?231708"></li><li class="item" data-background-image="http://www.dmoe.cc/random.php?700124"></li></ul></div></header><div id="waves"><svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto"><defs><path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/></defs><g class="parallax"><use xlink:href="#gentle-wave" x="48" y="0"/><use xlink:href="#gentle-wave" x="48" y="3"/><use xlink:href="#gentle-wave" x="48" y="5"/><use xlink:href="#gentle-wave" x="48" y="7"/></g></svg></div><main><div class="inner"><div id="main" class="pjax"><div class="article wrap"><div class="breadcrumb" itemscope itemtype="https://schema.org/BreadcrumbList"><i class="ic i-home"></i> <span><a href="/">首页</a></span></div><article itemscope itemtype="http://schema.org/Article" class="post block" lang="zh-CN"><link itemprop="mainEntityOfPage" href="http://example.com/2023/12/17/[%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%8050%E9%A2%98]%20%E5%89%8D%E7%BC%80%E5%92%8C%E4%B8%8E%E5%B7%AE%E5%88%86%E9%A2%98%E5%8D%95/"><span hidden itemprop="author" itemscope itemtype="http://schema.org/Person"><meta itemprop="image" content="/images/avatar.jpg"><meta itemprop="name" content="123hh2"><meta itemprop="description" content=", "></span><span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization"><meta itemprop="name" content="Keep moving forward"></span><div class="body md" itemprop="articleBody"><p><span class="exturl" data-url="aHR0cHM6Ly9oeWRyby5hYy9kL2FodWFjbS9wL0pDMDUwMQ==">题单链接</span></p><h2 id="JC0501-Subsequences-Summing-to-Sevens-S"><a href="#JC0501-Subsequences-Summing-to-Sevens-S" class="headerlink" title="JC0501. Subsequences Summing to Sevens S"></a>JC0501. Subsequences Summing to Sevens S</h2><h3 id="题目大意"><a href="#题目大意" class="headerlink" title="题目大意"></a>题目大意</h3><p>给定 $n$ 个数，求最长的一个区间使得区间和能被 7 整除，输出区间长度，若没有符合要求的区间，输出 0</p><h3 id="思路"><a href="#思路" class="headerlink" title="思路"></a>思路</h3><p>先求出这个数组的前缀和，然后对 7 取模，我们发现对于一个合法区间 $[l,r]$，$qzh[l]$ 和 $qzh[r]$ 的值一定相同，因为区间和对 7 取模为 0，问题就转化成了找出 $qzh$ 数组中两个相同的 0~6 出现的最远距离</p><h3 id="代码"><a href="#代码" class="headerlink" title="代码"></a>代码</h3><pre><code class="lang-cpp">#include&lt;bits/stdc++.h&gt;
+#define int long long
+#define _123hh2 0
+#define in inline
+#define ri register
+using namespace std;
+in int read()
+&#123;
+    int x=0,f=1;char ch=getchar();while(ch&gt;&#39;9&#39;||ch&lt;&#39;0&#39;) &#123;if(ch==&#39;-&#39;) f=-1;ch=getchar();&#125;
+    while(ch&gt;=&#39;0&#39;&amp;&amp;ch&lt;=&#39;9&#39;) &#123;x=(x&lt;&lt;3)+(x&lt;&lt;1)+(ch^48);ch=getchar();&#125;return x*f;
+&#125;
+void write(int x) &#123;if(x&lt;0) x=-x,putchar(&#39;-&#39;);if(x&gt;9) write(x/10);putchar(x%10+&#39;0&#39;);&#125;
+const int maxn=5e4+1;
+int awa[maxn],qzh[maxn];
+int l[7],r[7];
+signed main()
+&#123;
+    int n=read(),ans=0;
+    for(int i=1;i&lt;=n;i++) awa[i]=read(),qzh[i]=qzh[i-1]+awa[i],qzh[i]%=7;
+    for(int i=1;i&lt;=n;i++) r[qzh[i]]=i;
+    for(int i=n;i&gt;=1;i--) l[qzh[i]]=i;
+    l[0]=0;
+    for(int i=0;i&lt;7;i++) ans=max(ans,r[i]-l[i]);
+    write(ans);
+    return _123hh2;
+&#125;
+</code></pre><hr><h2 id="JC0502-地毯"><a href="#JC0502-地毯" class="headerlink" title="JC0502. 地毯"></a>JC0502. 地毯</h2><h3 id="题目大意-1"><a href="#题目大意-1" class="headerlink" title="题目大意"></a>题目大意</h3><p>给出 $n*n$ 的格子和 $m$ 个地毯，每个地毯给出坐标 $(x_1,y_1),(x_2,y_2)$ 分别代表左上角和右下角</p><p>问每个格子被多少地毯覆盖</p><h3 id="思路-1"><a href="#思路-1" class="headerlink" title="思路"></a>思路</h3><p>经典的二维差分，可以拆成一维差分来做</p><h3 id="代码-1"><a href="#代码-1" class="headerlink" title="代码"></a>代码</h3><pre><code class="lang-cpp">#include&lt;bits/stdc++.h&gt;
+#define int long long
+#define _123hh2 0
+#define in inline
+#define ri register
+using namespace std;
+in int read()
+&#123;
+    int x=0,f=1;char ch=getchar();while(ch&gt;&#39;9&#39;||ch&lt;&#39;0&#39;) &#123;if(ch==&#39;-&#39;) f=-1;ch=getchar();&#125;
+    while(ch&gt;=&#39;0&#39;&amp;&amp;ch&lt;=&#39;9&#39;) &#123;x=(x&lt;&lt;3)+(x&lt;&lt;1)+(ch^48);ch=getchar();&#125;return x*f;
+&#125;
+void write(int x) &#123;if(x&lt;0) x=-x,putchar(&#39;-&#39;);if(x&gt;9) write(x/10);putchar(x%10+&#39;0&#39;);&#125;
+const int maxn=1e3+11;
+int awa[maxn][maxn];
+signed main()
+&#123;
+    int n=read(),m=read();
+    for(int i=1;i&lt;=m;i++)
+    &#123;
+        int x1=read(),y1=read(),x2=read(),y2=read();
+        for(int j=y1;j&lt;=y2;j++) awa[x1][j]++,awa[x2+1][j]--;
+    &#125;
+    for(int i=1;i&lt;=n;i++)
+    &#123;
+        for(int j=1;j&lt;=n;j++)
+        &#123;
+            awa[i][j]+=awa[i-1][j];
+            cout&lt;&lt;awa[i][j]&lt;&lt;&quot; &quot;;
+        &#125;
+        cout&lt;&lt;endl;
+    &#125;
+    return _123hh2;
+&#125;
+</code></pre><hr><h2 id="JC0503-激光炸弹"><a href="#JC0503-激光炸弹" class="headerlink" title="JC0503. 激光炸弹"></a>JC0503. 激光炸弹</h2><h3 id="题目大意-2"><a href="#题目大意-2" class="headerlink" title="题目大意"></a>题目大意</h3><p>你可以摧毁边长为 $m$ 的正方形内所有目标，每个目标都有相应价值和坐标，问一次能摧毁的最大价值</p><h3 id="思路-2"><a href="#思路-2" class="headerlink" title="思路"></a>思路</h3><p>用二维数组模拟地图，并逐行前缀和，依次枚举炸弹可能炸的位置并统计答案即可</p><h3 id="代码-2"><a href="#代码-2" class="headerlink" title="代码"></a>代码</h3><pre><code class="lang-cpp">#include&lt;bits/stdc++.h&gt;
+// #define int long long
+#define _123hh2 0
+#define in inline
+#define ri register
+using namespace std;
+in int read()
+&#123;
+    int x=0,f=1;char ch=getchar();while(ch&gt;&#39;9&#39;||ch&lt;&#39;0&#39;) &#123;if(ch==&#39;-&#39;) f=-1;ch=getchar();&#125;
+    while(ch&gt;=&#39;0&#39;&amp;&amp;ch&lt;=&#39;9&#39;) &#123;x=(x&lt;&lt;3)+(x&lt;&lt;1)+(ch^48);ch=getchar();&#125;return x*f;
+&#125;
+void write(int x) &#123;if(x&lt;0) x=-x,putchar(&#39;-&#39;);if(x&gt;9) write(x/10);putchar(x%10+&#39;0&#39;);&#125;
+const int maxn=5e3+11;
+int awa[maxn][maxn];
+signed main()
+&#123;
+    int n=read(),m=read(),ans=0;
+    for(int i=1;i&lt;=n;i++)
+    &#123;
+        int x=read(),y=read(),w=read();
+        awa[x+1][y+1]=w;
+    &#125;
+    for(int i=1;i&lt;=5001;i++)
+    &#123;
+        for(int j=1;j&lt;=5001;j++)
+        &#123;
+            awa[i][j]+=awa[i-1][j]+awa[i][j-1]-awa[i-1][j-1];
+        &#125;
+    &#125;
+    for(int i=m;i&lt;=5001;i++)
+    &#123;
+        for(int j=m;j&lt;=5001;j++)
+        &#123;
+            ans=max(ans,awa[i][j]-awa[i][j-m]-awa[i-m][j]+awa[i-m][j-m]);
+        &#125;
+    &#125;
+    write(ans);
+    return _123hh2;
+&#125;
+</code></pre><hr><h2 id="JC0504-IncDec-Sequence"><a href="#JC0504-IncDec-Sequence" class="headerlink" title="JC0504. IncDec Sequence"></a>JC0504. IncDec Sequence</h2><h3 id="题目大意-3"><a href="#题目大意-3" class="headerlink" title="题目大意"></a>题目大意</h3><p>给定一个数组 $a$，每次可以选择一个区间 $[l,r]$，使这个区间内的数都加 1 或减 1，问最少多少次才能把数组中所有元素都相同，并求出最终数组的种类</p><h3 id="思路-3"><a href="#思路-3" class="headerlink" title="思路"></a>思路</h3><p>差分数组性质 $cf[i]=a[i]-a[i-1]$</p><p>根据性质可以得到该数组的差分数组，那么问题转化成将差分数组归零的操作数，即统计差分数组的操作数</p><p>统计出差分数组 $cf[2,n]$ 中的正数和和负数和，不统计 $cf[1]$ 是因为第一位的数是影响数组整体元素的，它+1/-1不会对对结果产生影响，所以每次操作我们可以</p><ul><li>差分数组的某一正数-1，负数+1</li><li>差分数组的某一正数-1</li><li>差分数组的某一负数+1</li></ul><p>我们贪心的尽量多的执行第一个操作，若有剩余，在执行第二/三个操作</p><p>这样最小操作数就是正数和和负数和的相反数的最大值</p><p>我们发现，执行完第一个操作后我们的差分数组若没有存在剩余的数，则最终得到的数列肯定是一种，而若存在剩余的数，则该数可以产生它自身的值的贡献数+1，因为它既可以让原数组从1到它自身前的一个数都+1/-1，也可以让它自身到数组末尾的数都+1/-1</p><h3 id="代码-3"><a href="#代码-3" class="headerlink" title="代码"></a>代码</h3><pre><code class="lang-cpp">#include&lt;bits/stdc++.h&gt;
+#define int long long
+#define in inline
+#define ri register
+#define _123hh2 0
+using namespace std;
+in int read()
+&#123;
+    int x=0,f=1;char ch=getchar();while(ch&gt;&#39;9&#39;||ch&lt;&#39;0&#39;) &#123;if(ch==&#39;-&#39;) f=-1;ch=getchar();&#125;
+    while(ch&gt;=&#39;0&#39;&amp;&amp;ch&lt;=&#39;9&#39;) &#123;x=(x&lt;&lt;3)+(x&lt;&lt;1)+(ch^48);ch=getchar();&#125;return x*f;
+&#125;
+in void write(int x) &#123;if(x&lt;0) &#123;x=-x;putchar(&#39;-&#39;);&#125;if(x&gt;9) write(x/10);putchar(x%10+&#39;0&#39;);&#125;
+const int maxn=1e5+1;
+int awa[maxn],cf[maxn],n;
+int sum1,sum2;
+signed main()
+&#123;
+    n=read();
+    for(ri int i=1;i&lt;=n;i++) awa[i]=read(),cf[i]=awa[i]-awa[i-1];
+    for(ri int i=2;i&lt;=n;i++)
+    &#123;
+        if(cf[i]&gt;0) sum1+=cf[i];
+        else sum2-=cf[i];
+    &#125;
+    write(max(sum1,sum2)),puts(&quot;&quot;),write(abs(sum1-sum2)+1);
+    return _123hh2;
+&#125;
+</code></pre><hr><h2 id="JC0505-水壶"><a href="#JC0505-水壶" class="headerlink" title="JC0505. 水壶"></a>JC0505. 水壶</h2><h3 id="题目大意-4"><a href="#题目大意-4" class="headerlink" title="题目大意"></a>题目大意</h3><p>给出有 $n$ 个数的数组 $arr[n]$，你可以进行不超过 $k$ 次操作，将 $arr[x]$ 的数全部转移到 $arr[x+1]$ 中 $(1 \leq x \leq n-1)$，问操作后数组中可能得到的最大的数是多少</p><h3 id="思路-4"><a href="#思路-4" class="headerlink" title="思路"></a>思路</h3><p>我们发现数组中的数只能从左往右转移且每次只能向右移动一个单位，所以要得到最大的数肯定是从某一位置开始一直往后进行转移操作，这样问题就转化成了求有 $n$ 个数的数组中长度为 $k+1$ 的区间和的最大值，前缀和维护即可</p><h3 id="代码-4"><a href="#代码-4" class="headerlink" title="代码"></a>代码</h3><pre><code class="lang-cpp">#include&lt;bits/stdc++.h&gt;
+#define int long long
+#define in inline
+#define ri register
+#define _123hh2 0
+using namespace std;
+in int read()
+&#123;
+    int x=0,f=1;char ch=getchar();while(ch&gt;&#39;9&#39;||ch&lt;&#39;0&#39;) &#123;if(ch==&#39;-&#39;) f=-1;ch=getchar();&#125;
+    while(ch&gt;=&#39;0&#39;&amp;&amp;ch&lt;=&#39;9&#39;) &#123;x=(x&lt;&lt;3)+(x&lt;&lt;1)+(ch^48);ch=getchar();&#125;return x*f;
+&#125;
+in void write(int x) &#123;if(x&lt;0) &#123;x=-x;putchar(&#39;-&#39;);&#125;if(x&gt;9) write(x/10);putchar(x%10+&#39;0&#39;);&#125;
+const int maxn=1e6+1;
+int awa[maxn],qzh[maxn];
+signed main()
+&#123;
+    int n=read(),k=read(),ans=0;
+    for(int i=1;i&lt;=n;i++) awa[i]=read(),qzh[i]=awa[i]+qzh[i-1];
+    for(int i=k+1;i&lt;=n;i++) ans=max(ans,qzh[i]-qzh[i-k-1]);
+    write(ans);
+    return _123hh2;
+&#125;
+</code></pre><div class="tags"><a href="/tags/%E5%89%8D%E7%BC%80%E5%92%8C/" rel="tag"><i class="ic i-tag"></i> 前缀和</a> <a href="/tags/%E5%B7%AE%E5%88%86/" rel="tag"><i class="ic i-tag"></i> 差分</a></div></div><footer><div class="meta"><span class="item"><span class="icon"><i class="ic i-calendar-check"></i> </span><span class="text">更新于</span> <time title="修改时间：2023-12-24 18:27:25" itemprop="dateModified" datetime="2023-12-24T18:27:25+08:00">2023-12-24</time></span></div><div class="reward"><button><i class="ic i-heartbeat"></i> 赞赏</button><p>请我喝[茶]~(￣▽￣)~*</p><div id="qr"><div><img data-src="/images/wechatpay.png" alt="123hh2 微信支付"><p>微信支付</p></div><div><img data-src="/images/alipay.png" alt="123hh2 支付宝"><p>支付宝</p></div><div><img data-src="/images/paypal.png" alt="123hh2 贝宝"><p>贝宝</p></div></div></div><div id="copyright"><ul><li class="author"><strong>本文作者： </strong>123hh2 <i class="ic i-at"><em>@</em></i>Keep moving forward</li><li class="link"><strong>本文链接：</strong> <a href="http://example.com/2023/12/17/[%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%8050%E9%A2%98]%20%E5%89%8D%E7%BC%80%E5%92%8C%E4%B8%8E%E5%B7%AE%E5%88%86%E9%A2%98%E5%8D%95/" title="算法基础50题 前缀和与差分题单">http://example.com/2023/12/17/[算法基础50题] 前缀和与差分题单/</a></li><li class="license"><strong>版权声明： </strong>本站所有文章除特别声明外，均采用 <span class="exturl" data-url="aHR0cHM6Ly9jcmVhdGl2ZWNvbW1vbnMub3JnL2xpY2Vuc2VzL2J5LW5jLXNhLzQuMC9kZWVkLnpo"><i class="ic i-creative-commons"><em>(CC)</em></i>BY-NC-SA</span> 许可协议。转载请注明出处！</li></ul></div></footer></article></div><div class="post-nav"><div class="item left"><a href="/2023/12/09/CF1899F-Alex-s-whims/" itemprop="url" rel="prev" data-background-image="http:&#x2F;&#x2F;www.dmoe.cc&#x2F;random.php?973081" title="CF1899F Alex&#39;s whims"><span class="type">上一篇</span> <span class="category"><i class="ic i-flag"></i></span><h3>CF1899F Alex's whims</h3></a></div><div class="item right"></div></div><div class="wrap" id="comments"></div></div><div id="sidebar"><div class="inner"><div class="panels"><div class="inner"><div class="contents panel pjax" data-title="文章目录"><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#JC0501-Subsequences-Summing-to-Sevens-S"><span class="toc-number">1.</span> <span class="toc-text">JC0501. Subsequences Summing to Sevens S</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%84%8F"><span class="toc-number">1.1.</span> <span class="toc-text">题目大意</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF"><span class="toc-number">1.2.</span> <span class="toc-text">思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81"><span class="toc-number">1.3.</span> <span class="toc-text">代码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JC0502-%E5%9C%B0%E6%AF%AF"><span class="toc-number">2.</span> <span class="toc-text">JC0502. 地毯</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%84%8F-1"><span class="toc-number">2.1.</span> <span class="toc-text">题目大意</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF-1"><span class="toc-number">2.2.</span> <span class="toc-text">思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81-1"><span class="toc-number">2.3.</span> <span class="toc-text">代码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JC0503-%E6%BF%80%E5%85%89%E7%82%B8%E5%BC%B9"><span class="toc-number">3.</span> <span class="toc-text">JC0503. 激光炸弹</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%84%8F-2"><span class="toc-number">3.1.</span> <span class="toc-text">题目大意</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF-2"><span class="toc-number">3.2.</span> <span class="toc-text">思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81-2"><span class="toc-number">3.3.</span> <span class="toc-text">代码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JC0504-IncDec-Sequence"><span class="toc-number">4.</span> <span class="toc-text">JC0504. IncDec Sequence</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%84%8F-3"><span class="toc-number">4.1.</span> <span class="toc-text">题目大意</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF-3"><span class="toc-number">4.2.</span> <span class="toc-text">思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81-3"><span class="toc-number">4.3.</span> <span class="toc-text">代码</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#JC0505-%E6%B0%B4%E5%A3%B6"><span class="toc-number">5.</span> <span class="toc-text">JC0505. 水壶</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E9%A2%98%E7%9B%AE%E5%A4%A7%E6%84%8F-4"><span class="toc-number">5.1.</span> <span class="toc-text">题目大意</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E6%80%9D%E8%B7%AF-4"><span class="toc-number">5.2.</span> <span class="toc-text">思路</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E4%BB%A3%E7%A0%81-4"><span class="toc-number">5.3.</span> <span class="toc-text">代码</span></a></li></ol></li></ol></div><div class="related panel pjax" data-title="系列文章"></div><div class="overview panel" data-title="站点概览"><div class="author" itemprop="author" itemscope itemtype="http://schema.org/Person"><img class="image" itemprop="image" alt="123hh2" data-src="/images/avatar.jpg"><p class="name" itemprop="name">123hh2</p><div class="description" itemprop="description"></div></div><nav class="state"><div class="item posts"><a href="/archives/"><span class="count">11</span> <span class="name">文章</span></a></div><div class="item tags"><a href="/tags/"><span class="count">8</span> <span class="name">标签</span></a></div></nav><div class="social"><span class="exturl item github" data-url="aHR0cHM6Ly9naXRodWIuY29tLzEyM2hoMg==" title="https:&#x2F;&#x2F;github.com&#x2F;123hh2"><i class="ic i-github"></i></span> <span class="exturl item music" data-url="aHR0cHM6Ly9tdXNpYy4xNjMuY29tLyMvdXNlci9ob21lP2lkPTM5OTU0MDQ0OTk=" title="https:&#x2F;&#x2F;music.163.com&#x2F;#&#x2F;user&#x2F;home?id&#x3D;3995404499"><i class="ic i-cloud-music"></i></span> <span class="exturl item email" data-url="bWFpbHRvOjE3OTYzNzI4NTBAcXEuY29t" title="mailto:1796372850@qq.com"><i class="ic i-envelope"></i></span></div><ul class="menu"><li class="item"><a href="/" rel="section"><i class="ic i-home"></i>首页</a></li><li class="item dropdown"><a href="javascript:void(0);"><i class="ic i-feather"></i>文章</a><ul class="submenu"><li class="item"><a href="/archives/" rel="section"><i class="ic i-list-alt"></i>归档</a></li><li class="item"><a href="/categories/" rel="section"><i class="ic i-th"></i>分类</a></li><li class="item"><a href="/tags/" rel="section"><i class="ic i-tags"></i>标签</a></li></ul></li></ul></div></div></div><ul id="quick"><li class="prev pjax"></li><li class="up"><i class="ic i-arrow-up"></i></li><li class="down"><i class="ic i-arrow-down"></i></li><li class="next pjax"></li><li class="percent"></li></ul></div></div><div class="dimmer"></div></div></main><footer id="footer"><div class="inner"><div class="widgets"><div class="rpost pjax"><h2>随机文章</h2><ul><li class="item"><div class="breadcrumb"></div><span><a href="/2023/12/05/CF1891C-Smilo-and-Monsters/" title="CF1891C Smilo and Monsters">CF1891C Smilo and Monsters</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2023/12/02/%5B%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%8050%E9%A2%98%5D%20%E6%A8%A1%E6%8B%9F%E9%A2%98%E5%8D%95/" title="算法基础50题 模拟题单">算法基础50题 模拟题单</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2023/12/03/CF1898B-Milena-and-Admirer/" title="CF1898B Milena and Admirer">CF1898B Milena and Admirer</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2021/11/30/%E6%B5%85%E8%B0%88%E7%8F%82%E6%9C%B5%E8%8E%89%E6%A0%91/" title="浅谈珂朵莉树">浅谈珂朵莉树</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2023/12/09/CF1898D-Absolute-Beauty/" title="CF1898D Absolute Beauty">CF1898D Absolute Beauty</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2023/12/07/CF1898C-Colorful-Grid/" title="CF1898C Colorful Grid">CF1898C Colorful Grid</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2023/12/02/CF1899E/" title="CF1899E Queue Sort">CF1899E Queue Sort</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2023/12/06/Codeforces-Round-913-Div-3-A-F/" title="Codeforces Round 913 (Div. 3)A~F">Codeforces Round 913 (Div. 3)A~F</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2023/12/09/CF1899F-Alex-s-whims/" title="CF1899F Alex&#39;s whims">CF1899F Alex's whims</a></span></li><li class="item"><div class="breadcrumb"></div><span><a href="/2023/12/17/%5B%E7%AE%97%E6%B3%95%E5%9F%BA%E7%A1%8050%E9%A2%98%5D%20%E5%89%8D%E7%BC%80%E5%92%8C%E4%B8%8E%E5%B7%AE%E5%88%86%E9%A2%98%E5%8D%95/" title="算法基础50题 前缀和与差分题单">算法基础50题 前缀和与差分题单</a></span></li></ul></div><div><h2>最新评论</h2><ul class="leancloud-recent-comment"></ul></div></div><div class="status"><div class="copyright">&copy; 2010 – <span itemprop="copyrightYear">2023</span> <span class="with-love"><i class="ic i-sakura rotate"></i> </span><span class="author" itemprop="copyrightHolder">123hh2 @ 123hh2</span></div><div class="powered-by">基于 <span class="exturl" data-url="aHR0cHM6Ly9oZXhvLmlv">Hexo</span> & Theme.<span class="exturl" data-url="aHR0cHM6Ly9naXRodWIuY29tL2FtZWhpbWUvaGV4by10aGVtZS1zaG9rYQ==">Shoka</span></div></div></div></footer></div><script data-config type="text/javascript">var LOCAL={path:"2023/12/17/[算法基础50题] 前缀和与差分题单/",favicon:{show:"（●´3｀●）やれやれだぜ",hide:"(´Д｀)大変だ！"},search:{placeholder:"文章搜索",empty:"关于 「 ${query} 」，什么也没搜到",stats:"${time} ms 内找到 ${hits} 条结果"},valine:!0,fancybox:!0,copyright:'复制成功，转载请遵守 <i class="ic i-creative-commons"></i>BY-NC-SA 协议。',ignores:[function(e){return e.includes("#")},function(e){return new RegExp(LOCAL.path+"$").test(e)}]}</script><script src="https://cdn.polyfill.io/v2/polyfill.js"></script><script src="//cdn.jsdelivr.net/combine/npm/pace-js@1.0.2/pace.min.js,npm/pjax@0.2.8/pjax.min.js,npm/whatwg-fetch@3.4.0/dist/fetch.umd.min.js,npm/animejs@3.2.0/lib/anime.min.js,npm/algoliasearch@4/dist/algoliasearch-lite.umd.js,npm/instantsearch.js@4/dist/instantsearch.production.min.js,npm/lozad@1/dist/lozad.min.js,npm/quicklink@2/dist/quicklink.umd.js"></script><script src="/js/app.js?v=0.2.5"></script></body></html><!-- rebuild by hrmmi -->
