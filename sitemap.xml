@@ -202,20 +202,6 @@
   </url>
   
   <url>
-    <loc>https://123hh2.github.io/tags/Block/</loc>
-    <lastmod>2025-08-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://123hh2.github.io/tags/math/</loc>
-    <lastmod>2025-08-09</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://123hh2.github.io/tags/CF/</loc>
     <lastmod>2025-08-09</lastmod>
     <changefreq>weekly</changefreq>
@@ -224,6 +210,20 @@
   
   <url>
     <loc>https://123hh2.github.io/tags/Binary-Search/</loc>
+    <lastmod>2025-08-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://123hh2.github.io/tags/Block/</loc>
+    <lastmod>2025-08-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://123hh2.github.io/tags/math/</loc>
     <lastmod>2025-08-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

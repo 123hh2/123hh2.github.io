@@ -22,10 +22,10 @@ https://123hh2.github.io/tags/Simulation/
 https://123hh2.github.io/tags/Floyd/
 https://123hh2.github.io/tags/Number-Theory/
 https://123hh2.github.io/tags/Greddy/
-https://123hh2.github.io/tags/Block/
-https://123hh2.github.io/tags/math/
 https://123hh2.github.io/tags/CF/
 https://123hh2.github.io/tags/Binary-Search/
+https://123hh2.github.io/tags/Block/
+https://123hh2.github.io/tags/math/
 https://123hh2.github.io/tags/ODT/
 https://123hh2.github.io/tags/NowCoder/
 https://123hh2.github.io/tags/Ternary-Search/
